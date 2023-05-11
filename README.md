@@ -29,9 +29,6 @@ SENTRY_KEY=
     -   `export FLASK_APP=app/app.py`
 - Run application: `flask run --no-debugger ----no-reload`
 - Visit `http://127.0.0.1:5000` and start your development
-## API documentation
-
-- Visit `http://127.0.0.1:8000/docs` to watch API documentation
 
 ## Testing
 
