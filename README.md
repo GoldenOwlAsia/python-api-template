@@ -4,15 +4,15 @@
 
 ### Prerequisites
 
-- Python version: `> python 3.9.5`
-- Flask version: `2.2.3`
+- Python version: `> python 3.12.0`
+- Flask version: `3.0.1`
 - Database: `postgresql`
 
 ## Installation
 
 - Clone the repository: `git clone https://github.com/GoldenOwlAsia/python-flask-api-template.git`
-- Initalize virtual environment: `python3 0m venv venv`
-- Activate virtual environment: `source venv/bin/activate`
+- Initalize virtual environment: `python3 -m venv env`
+- Activate virtual environment: `source env/bin/activate`
 - Go to python-fast-api-template folder: `cd ./python-fast-api-template`
 - Install the dependencies: `pip install -r requirements.txt`
 - Create .env file:
@@ -25,9 +25,9 @@ SENTRY_KEY=
 - Create database by docker command: `docker run --name flask -p 5435:5432 -e POSTGRES_PASSWORD=flask -e POSTGRES_USER=flask -e POSTGRES_DB=flask -d postgres:14`
 - Turn to line 63 in `alembic.ini` file, change the value follows this structure : postgresql://POSTGRES_USER:POSTGRES_PASSWORD@POSTGRES_HOST:POSTGRES_PORT/POSTGRES_DB
 - Run migration: `alembic upgrade head`
-- Export env : 
+- Export env :
     -   `export FLASK_APP=app/app.py`
-- Run application: `flask run --no-debugger ----no-reload`
+- Run application: `flask run --no-debugger --no-reload`
 - Visit `http://127.0.0.1:5000` and start your development
 
 ## Testing
